@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#561e6d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/rdbGrupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdbNotificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#daff22"
+            android:text="Notificação" />
+        <RadioButton
+            android:id="@+id/rdbToast"
+            android:textColor="#daff22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensagens" />
+    </RadioGroup>
+    <Button
+        android:layout_below="@id/rdbGrupo"
+        android:id="@+id/btnUmaVez"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarme - Uma vez"
+        style="@style/Widget.AppCompat.Button.Colored" />
+    <Button
+        android:layout_below="@id/btnUmaVez"
+        android:id="@+id/btnRepetir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarme - Repetir"
+        style="@style/Widget.AppCompat.Button.Colored" />
+</RelativeLayout>
